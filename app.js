@@ -3,9 +3,10 @@
 // Declare, assignment operator, assign value
 
 let name = "nsikak isaac udoh";
-console.log(name);
+let address, zipcode, state;
 
-console.log(name);
-console.log(name);
-console.log(name);
-console.log(name);
+address = "814 N magnolia str";
+zipcode = "87901";
+state = "New Mexico";
+console.log (name, address, zipcode, state);
+
