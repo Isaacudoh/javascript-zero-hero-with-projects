@@ -1,7 +1,11 @@
-// document.write ('hello world');
-// alert ('hello world')
-//console.log('hello world')
+// vairable - Most basic building block
+// variables - store, access, modify === value
+// Declare, assignment operator, assign value
 
-document.write("hello world");
-// alert("hello people");
-console.log("5");
+let name = "nsikak isaac udoh";
+console.log(name);
+
+console.log(name);
+console.log(name);
+console.log(name);
+console.log(name);
