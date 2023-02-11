@@ -4,12 +4,14 @@
 
 // typeof - operator (typeof variable) (typeof value)
 
-
 // string
+let text = "some text";
 
 // number
+let number = 45;
 
 // Boolan
+
 
 // Null
 
