@@ -1,14 +1,18 @@
-// Implict Type Conversion
+// Data Types - 7 total
+// Primitive - string, Number, Boolean, Null, Undefined, Symbol
+// object - Arrays, Functions, Objects
 
-let name = "nsikak";
-let lastName = "udoh";
-let fullName = name + " " + lastName;
-console.log(fullName);
+// typeof - operator (typeof variable) (typeof value)
 
-let number = 4;
-let number2 = 10;
-let result = number + number2;
-console.log(result);
 
-let value = name - lastName;
-console.log(value);
+// string
+
+// number
+
+// Boolan
+
+// Null
+
+// Undefined
+
+// Symbol(ES6)
