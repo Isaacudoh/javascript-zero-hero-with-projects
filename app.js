@@ -1,13 +1,11 @@
-// numbers
-// loosely typed = don;t declare type
-// +=, -=, ++ , --, %
-// Modulus (%) operator returns the remainder after integer division
+// Implict Type Conversion
 
-let number = 5;
-number += 5;
-console.log(number);
+let name = "nsikak";
+let lastName = "udoh";
+let fullName = name + " " + lastName;
+console.log(fullName);
 
-let pizzaSlices = 10;
-let children = 3;
-let amount = pizzaSlices % children;
-console.log(amount)
+let number = 4;
+let number2 = 10;
+let result = number + number2;
+console.log(result);
