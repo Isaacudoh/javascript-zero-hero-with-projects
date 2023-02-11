@@ -9,3 +9,6 @@ let number = 4;
 let number2 = 10;
 let result = number + number2;
 console.log(result);
+
+let value = name - lastName;
+console.log(value);
