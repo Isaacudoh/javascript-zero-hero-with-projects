@@ -1,13 +1,20 @@
 // Arrays, Functions and Objects
-// Functions - declare, invote
+// params - when declare/invote - Parameter are like placeholder or local variable that we can pass value to and when we pass that value its called an argument.
+// placeholders, local vars
+// arguments - when invoke/call/run
+// use vars/values, multiple params, undefined
 
-// functions allows us write our code in one place and later reuse that code all throughout our application without copy paste.
-
-function hello() {
-  //   logic
-  console.log("hello there bob");
-  console.log("hello there tom");
-  console.log("hello there abi");
+function greet(name) {
+  console.log("Hello there" + " " + name);
 }
 
-hello();
+// greet nsikak
+greet("nsikak");
+
+// greet bob
+greet("bob");
+
+// greet anna
+greet("anna")
+
+// greet susy
