@@ -1,17 +1,16 @@
 // Arrays, Functions and Objects
-// return
-// defualt undefined, shortcuts, ignores after
-//  1 inch 2.5cm - write a function that calculates value in cm
+// Expressions - another way to define a function
+// creat a varibale, assign to function (not vlaue), use var
+//  diff - hositing, use - arrow func, libraries
 
-function calculate (value){
-    console.log ("The value in cm is: " + value * 2.54 + "cm")
+// function defination
+function addValues(num1, num2) {
+  return num1 + num2;
 }
 
-calculate(24);
+let firstValue = addValues(3, 4);
+let secondValue = addValues(12, 34);
 
-// let width = 0;
-// let height = 0;
-
-// let dimensions = [width, length];
-
-// console.log(dimensions);
+// function expression
+let values = [firstValue, secondValue];
+console.log(values);
