@@ -1,5 +1,4 @@
 /*
-
 ## Functions #5
 
 1. Create "calculateTotal" function
@@ -10,6 +9,11 @@
 5. Call calculate Result, pass in some values and assign result to each otder
 6. log all three orders
 7. refactor "calculateTotal" function expression
-
-
 */
+
+function calculateTotal(subtotal, tax) {
+  let total = subtotal + tax;
+  return total;
+}
+
+console.log(calculateTotal(20, 20));
