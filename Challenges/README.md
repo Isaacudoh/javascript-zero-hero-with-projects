@@ -30,3 +30,32 @@
 3. assign first fruit to the variable
 4. re-assign last array item to the actual fruit
 5. log both first fruit variable and entire fruits array
+
+## Functions #5
+
+1. Create "calculateTotal" function
+2. add two parameters subtotal, tax
+3. return sum of parameters
+
+4. creat 3 vars "order1", "order2", "order3"
+5. Call calculate Result, pass in some values and assign result to each otder
+6. log all three orders
+7. refactor "calculateTotal" function expression
+
+## objects #6
+
+1. create car object
+2. add make, model, year, colors (array), hydrid (boolean) keys
+3. add two methods (drive and stop)
+4. in the function body setup log with random text
+5. log make
+6. log first color
+7. invoke both methods
+
+## Conditional statements #7
+
+1. create two objects "person1". "person2"
+2. setup name, age (15-25),
+    status ('resident', "tourist") keys
+3. setup if else, conditional where age must be bigger than 18 and status must be equal to "resident"
+4. test with both objects
