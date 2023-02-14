@@ -1,16 +1,16 @@
 // Switch
 // dice value : 1 - 6
 
-let dice = 1;
+let dice = 0;
 
 // else if
 if (dice === 1) {
   console.log("You got one");
 }
-if (dice === 2) {
+else if (dice === 2) {
   console.log("You got two");
 }
-if (dice < 1 || dice > 6) {
+else {
   console.log("error: You did not roll the dice");
 }
 
