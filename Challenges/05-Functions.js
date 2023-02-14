@@ -16,5 +16,4 @@ function calculateTotal(subtotal, tax) {
   // return total;
   return subtotal + tax;
 }
-
 console.log(calculateTotal(40, 20));
