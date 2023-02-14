@@ -12,8 +12,9 @@
 */
 
 function calculateTotal(subtotal, tax) {
-  let total = subtotal + tax;
-  return total;
+  // let total = subtotal + tax;
+  // return total;
+  return subtotal + tax;
 }
 
-console.log(calculateTotal(20, 20));
+console.log(calculateTotal(40, 20));
