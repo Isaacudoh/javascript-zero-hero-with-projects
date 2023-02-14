@@ -12,3 +12,20 @@
 
 */
 
+let car = {
+  make: "Toyota",
+  year: 2023,
+  colors: ["blue", "purple", "pink", "yellow"],
+  hybrid: true,
+  drive: function moveCar() {
+    console.log("car is moving");
+  },
+  stop: function stopCar() {
+    console.log("the car has stopped");
+  },
+};
+
+console.log(car.make);
+console.log(car.colors[0])
+car.stop()
+car.drive()
