@@ -1,41 +1,13 @@
-// Switch
-// dice value : 1 - 6
+// loops
+// repeatedly run a block of code while confition is true
+// while loop
+// turn off auto save
 
-let dice = 3;
+let amount = 10;
 
-switch (dice) {
-  case 1:
-    console.log("you got one");
-    break;
-  case 2:
-    console.log("you got two");
-    break;
-  case 3:
-    console.log("you got three");
-    break;
-    default:
-      console.log('you did not roll the dice')
+while (amount > 0) {
+  console.log(
+    "I have" + " " + amount + " " + "dollars and i'm going to the mall"
+  );
+  amount--;
 }
-
-// else if
-// if (dice === 1) {
-//   console.log("You got one");
-// }
-// else if (dice === 2) {
-//   console.log("You got two");
-// }
-// else {
-//   console.log("error: You did not roll the dice");
-// }
-
-// All if
-
-// if(dice === 1){
-//   console.log("You got one")
-// }
-// if(dice === 2){
-//   console.log ("You got two")
-// }
-// if(dice < 1 || dice > 6 ){
-//   console.log('error: You did not roll the dice')
-// }
