@@ -16,4 +16,10 @@ function calculateTotal(subtotal, tax) {
   // return total;
   return subtotal + tax;
 }
-console.log(calculateTotal(40, 20));
+// console.log(calculateTotal(40, 20));
+
+let order1 = calculateTotal(100, 10);
+let order2 = calculateTotal(50, 5);
+let order3 = calculateTotal(25, 5);
+
+console.log(order1, order2, order3);
