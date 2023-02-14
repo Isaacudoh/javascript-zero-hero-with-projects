@@ -18,10 +18,10 @@ let car = {
   colors: ["blue", "purple", "pink", "yellow"],
   hybrid: true,
   drive: function moveCar() {
-    console.log("car is moving");
+    console.log("car is moving....");
   },
   stop: function stopCar() {
-    console.log("the car has stopped");
+    console.log("the car has stopped....");
   },
 };
 
