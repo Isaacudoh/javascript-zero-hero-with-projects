@@ -1,9 +1,14 @@
 // conditional statements
+// comparison operators
 // >, <, >=, <=, ==, ===, !=, !===
+// else if and !
 
-if(4 < 1) {
-  console.log('You are right')
+let num1 = 4;
+let num2 = 6;
+
+if(num1 > num2) {
+  console.log('first number is greater than second')
 }
 else {
-  console.log('you played yourself')
+  console.log('first number is NOT greater than second numer')
 }
