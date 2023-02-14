@@ -1,14 +1,14 @@
 // conditional statements
 // comparison operators
 // >, <, >=, <=, ==, ===, !=, !===
-// else if and !
+// ==check only value
+// === checks value and type
 
-let num1 = 4;
+let num1 = 6;
 let num2 = 6;
 
-if(num1 > num2) {
-  console.log('first number is greater than second')
-}
-else {
-  console.log('first number is NOT greater than second numer')
-}
+let value = num1 == num2;
+let value2 = num1 === num2;
+
+console.log(value);
+console.log(value2);
