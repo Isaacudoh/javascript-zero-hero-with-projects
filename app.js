@@ -1,12 +1,16 @@
-// loops
-// repeatedly run a block of code while condition is true
-// for loops
+/*
+String properties and methods
+wrapper string objects, don't memorize methods.
 
-// let i;
-// for (i = 0; i < 10; i++) {
-//   console.log("and the number is : " + i);
-// }
+let text = "Peter Jordan"
 
-for (let number = 11; number >= 0; number--) {
-  console.log("and the number is : " + number);
+let person = {
+    name: "peter", // property
+    greeting(){
+        // method
+        console.log("Hey, I'm Peter")
+    }
 }
+
+
+*/
