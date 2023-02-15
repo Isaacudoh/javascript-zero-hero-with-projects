@@ -26,6 +26,9 @@ console.log(allNames);
 allNames.push("susy");
 console.log(allNames);
 
-// pop -
+// pop - adds to end of array
 allNames.pop();
 console.log(allNames);
+
+// splice - mutates original array
+let specificNames = allNames.splice(2, 3);
