@@ -12,11 +12,9 @@
 
 */
 
-function fullName(firstName, lastName) {
-  //   let firstName = "nsikak";
-  //   let lastName = "udoh";
-  let fullName = `${firstName} ${lastName}`;
-  return fullName.toUpperCase();
-}
+// function fullName(firstName, lastName) {
+//   let fullName = `${firstName} ${lastName}`;
+//   return fullName.toUpperCase();
+// }
 
-console.log(fullName("john", "smith"));
+// console.log(fullName("john", "smith"));

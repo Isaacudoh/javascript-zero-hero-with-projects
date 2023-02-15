@@ -1,34 +1,12 @@
-// Array Properties and Methods
+// Arrays and for loops
 
-let names = ["john", "bobo", "barry", "olga", "ben"];
+let names = ["anna", "john", "chris", "adam", "nsikak", "paul"];
+let lastName = "shakeandbake";
+let newArray = [];
 
-// length
-console.log(names.length);
-console.log(names[names.length - 1]);
+// for loop
 
-// concat
-let lastNames = ["pepper", "onion", "banana"];
-let allNames = names.concat(lastNames);
-console.log(allNames);
-
-// reserve
-console.log(allNames.reverse());
-
-// unshift - adds to beginning of array
-allNames.unshift("susy");
-console.log(allNames);
-
-// shift - remove item from begining of array
-allNames.shift();
-console.log(allNames);
-
-// push - add to end of array
-allNames.push("susy");
-console.log(allNames);
-
-// pop - adds to end of array
-allNames.pop();
-console.log(allNames);
-
-// splice - mutates original array
-let specificNames = allNames.splice(2, 3);
+for (let i = 0; i < names.length; i++) {
+  console.log(i);
+  console.log(names[i]);
+}
