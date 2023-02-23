@@ -11,6 +11,7 @@ for (let i = 0; i < names.length; i++) {
   console.log(names[i]);
   let fullName = `${names[i]} ${lastName}`;
   newArray.push(fullName);
+  b;
 }
 
 console.log(names);
