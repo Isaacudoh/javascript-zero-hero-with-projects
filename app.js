@@ -1,12 +1,20 @@
-// Truthy and Falsy
-// "",'',``,0,-0, NaN, false, null, undefined
+// unary operators - typeof
+let text = "some text";
+console.log(typeof text); // operand
 
-let bool1 = true;
-let bool2 = 2 > 1;
+// binary operator - assignment
+let number = 3;
+let number2 = 2 + 5;
 
-if (bool1) {
-  console.log("hey it works");
-}
-if (bool2) {
-  console.log("hey it also works");
+// ternary operator
+// condition ? (run if true) : (runs if false)
+
+let value = 1 < 0;
+
+value ? console.log("value is true") : console.log("value is false");
+
+if (value) {
+  console.log("value is true");
+} else {
+  console.log("value is false");
 }
