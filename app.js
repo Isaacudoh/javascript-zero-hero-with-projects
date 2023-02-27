@@ -1,15 +1,13 @@
-function greetMorning(name) {
+function morning(name) {
+  return `Goodmorning ${name.toUpperCase()}`;
+}
+function greet(name, callBack) {
   let myName = "Nsikak";
-  console.log(`Goodmorning ${name}, my name is ${myName}`);
+  console.log(`${callBack(name)}, my name is ${myName}`);
 }
 
-function greetAfternoon(name) {
-  let myName = "Nsikak";
-  console.log(`Goodafternoon ${name}, my name is ${myName}`);
-}
-
-greetMorning("john");
-greetAfternoon("john");
+greet("john", morning);
+greet("bobo", morning);
 
 // callback functions, higher order functions, functions as first class objects/citizens
 
