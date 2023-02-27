@@ -1,6 +1,9 @@
 function morning(name) {
   return `Goodmorning ${name.toUpperCase()}`;
 }
+function afternoon(name) {
+  return `Good afternoon ${name.repeat(3)}`;
+}
 function greet(name, callBack) {
   let myName = "Nsikak";
   console.log(`${callBack(name)}, my name is ${myName}`);
