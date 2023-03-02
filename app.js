@@ -1,23 +1,30 @@
-// forEach
-//  does not return new array
-// iterates over each array and we can decide what we want to do
+// map
+// does return a new array
+// does not change size of original array
+// uses values from origin arrary when making new one
 
 let people = [
   { name: "nsikak", age: 31, position: "developer" },
   { name: "Peter", age: 25, position: "designer" },
   { name: "Susy", age: 11, position: "boss" },
+  { name: "anna", age: 35, position: "the boss" },
 ];
 
-function showPerson(person) {
-  console.log(person.position.toUpperCase());
-}
+let ages = people.map(function (person) {
+  return person.age + 20;
+});
 
-people.forEach(showPerson);
+let newPeople = people.map(function (person) {
+  return {
+    firstName: person.name.toUpperCase(),
+    oldAge: person.age + 20,
+  };
+});
 
-// let people2 = [
-//   {
-//     name: "okon",
-//     age: 24,
-//     Ethnicity: "Igbo",
-//   },
-// ];
+let names = people.map(function (person) {
+  return `<h1>${person.name}</h1>`;
+});
+
+document.body.innerHTML = names.join("");
+
+console.log(names);
