@@ -3,38 +3,17 @@
 // ### Create student array
 
 // 1. Setup students array with 5 students
+// NOTE: DATA was moved to DATA.js file then linked to index file
+// have access to students from data.js
 
-let students = [
-  {
-    id: 1,
-    name: "Peter",
-    score: 80,
-    favoriteSubject: "math",
-  },
-  {
-    id: 2,
-    name: "susan",
-    score: 80,
-    favoriteSubject: "math",
-  },
-  {
-    id: 3,
-    name: "anna",
-    score: 85,
-    favoriteSubject: "math",
-  },
-  {
-    id: 4,
-    name: "john",
-    score: 34,
-    favoriteSubject: "art",
-  },
-  {
-    id: 5,
-    name: "bobo",
-    score: 74,
-    favoriteSubject: "math",
-  },
-];
+// updated students
+// 1. add role: "student" property to each object using MAP method
+// 2. Assign to 'updatedStudents' variable and log
 
-console.log(students);
+let updatedStudents = students.map(function (student) {
+  //   console.log(student);
+  student.role = "student";
+  return student;
+});
+
+console.log(updatedStudents);
