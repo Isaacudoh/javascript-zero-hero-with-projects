@@ -24,9 +24,10 @@ let updatedStudents = students.map(function (student) {
 // 2. assign to "highscores" variable and log
 
 let highScores = students.filter(function (student) {
-  if (student.score >= 10) {
-    return student;
-  }
+  // if (student.score >= 10) {
+  //   return student;
+  // }
+  if (student.score >= 80) return student;
 });
 
 console.log(highScores);
