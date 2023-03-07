@@ -31,4 +31,14 @@ let highScores = students.filter(function (student) {
   return student.score >= 80;
 });
 
-console.log(highScores);
+// console.log(highScores);
+
+// specific id
+// 1. find specific id in array
+// 2. assign to 'highscore' variable and log
+
+let specificId = students.find(function (banana) {
+  return banana.id === 3;
+});
+
+console.log(specificId);
