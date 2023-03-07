@@ -16,4 +16,17 @@ let updatedStudents = students.map(function (student) {
   return student;
 });
 
-console.log(updatedStudents);
+// console.log(updatedStudents);
+
+// highscores
+
+// 1. Filter array and return only score >= 80
+// 2. assign to "highscores" variable and log
+
+let highScores = students.filter(function (student) {
+  if (student.score >= 10) {
+    return student;
+  }
+});
+
+console.log(highScores);
