@@ -55,4 +55,21 @@ let averageScore =
     return scoresTotal + student.score;
   }, 0) / students.length;
 
-console.log(averageScore);
+// console.log(averageScore);
+
+/*
+
+survey
+
+1. list favorite subjects with reduce
+
+{
+  english: 1
+  history: 1
+  math: 3
+}
+
+2. assign to survey and log
+
+*/
+
