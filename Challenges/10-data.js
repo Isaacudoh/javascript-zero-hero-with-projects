@@ -9,7 +9,7 @@ let students = [
     id: 2,
     name: "susan",
     score: 99,
-    favoriteSubject: "math",
+    favoriteSubject: "history",
   },
   {
     id: 3,
@@ -27,6 +27,6 @@ let students = [
     id: 5,
     name: "bobo",
     score: 74,
-    favoriteSubject: "math",
+    favoriteSubject: "chemistry",
   },
 ];
