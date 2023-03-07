@@ -8,7 +8,7 @@ let students = [
   {
     id: 2,
     name: "susan",
-    score: 80,
+    score: 99,
     favoriteSubject: "math",
   },
   {

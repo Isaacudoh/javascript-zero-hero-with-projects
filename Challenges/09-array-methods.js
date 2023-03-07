@@ -35,10 +35,24 @@ let highScores = students.filter(function (student) {
 
 // specific id
 // 1. find specific id in array
-// 2. assign to 'highscore' variable and log
+// 2. Assign to 'specificId' variable and log
 
 let specificId = students.find(function (banana) {
   return banana.id === 3;
 });
 
-console.log(specificId);
+// console.log(specificId);
+
+// averageScore
+// 1. sum up all student.score values with reduce
+// 2. divide by the length of the students array
+// 3. assign to 'averageScore' and log
+
+let averageScore =
+  students.reduce(function (scoresTotal, student) {
+    // console.log(student);
+    // console.log(scoresTotal);
+    return scoresTotal + student.score;
+  }, 0) / students.length;
+
+console.log(averageScore);
