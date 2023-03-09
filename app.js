@@ -1,13 +1,22 @@
 // select the element or group of elements that we want
 // decide the effect we want to apply to the selection
 
-// getElementById('element)
+// getElementsByTagName('tagname);
+//HTMLCollection = array-like object
+// index, length propery but not array methods (forEach)
 
-let h1 = document.getElementById("title");
-h1.style.color = "red";
+//querySelectorAll() in most cases
+// Nodelist - objects are collections of nodes
+// can run forEach
+// turn  them into array - spread operator [...]
+//after that can use any array properties
 
-let btn = document.getElementById("btn");
-btn.style.color = "orange";
+let headings = document.getElementsByTagName("h2");
+headings[0].style.color = "red";
+console.log(headings);
 
-// document.getElementById("btn").style.backgroundColor = "blue";
-// document.getElementById("btn").style.backgroundColor = "white";
+let items = document.getElementsByTagName("li");
+
+
+let betterItems = [...items]
+betterItems.forEach
