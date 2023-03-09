@@ -1,21 +1,25 @@
-// reduce
-// iterates, callback function
-// reduces to a single value - number, array, object
-// 1 parameter ('acc') - total of all calculations
-// 2 parameter ('curr') - current iteration/value
+// math - used to perform math operation in Javascript
+// standard built-in objects - always available
 
-let people = [
-  { name: "nsikak", age: 31, position: "developer", id: 1, salary: 200 },
-  { name: "Peter", age: 25, position: "designer", id: 2, salary: 300 },
-  { name: "Susy", age: 11, position: "boss", id: 3, salary: 500 },
-  { name: "anna", age: 35, position: "the boss", id: 4, salary: 500 },
-];
+// rounding down
 
-let total = people.reduce(function (acc, currItem) {
-  console.log(`total ${acc}`);
-  console.log(`current money : ${currItem.salary}`);
-  acc += currItem.salary;
-  return acc;
-}, 0);
+// let number = 4.56789;
+// let result = Math.floor(number);
 
-console.log(total);
+// rounding up
+// let number = 4.56789;
+// let result = Math.ceil(number);
+
+// square root
+// let number = 89;
+// let result = Math.sqrt(number);
+
+//min number
+// let number = Math.min(3, 4, 6, 1, 9);
+
+// Max number
+// let number = Math.man(9, 4, 3, 5, 6, 4, 3, 9, 7);
+
+const result = Math.floor(Math.random() * 10);
+
+console.log(result);
