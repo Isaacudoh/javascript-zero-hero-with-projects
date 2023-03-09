@@ -1,41 +1,28 @@
-// Date
+//similar to css
 
-let months = [
-  "january",
-  "fabruary",
-  "march",
-  "april",
-  "may",
-  "june",
-  "july",
-  "august",
-  "september",
-  "november",
-  "december",
-];
+// select the element or group of elements that we want to affect
+// decide the effect we want to apply to the selection
 
-let days = [
-  "Sunday",
-  "monday",
-  "tuesday",
-  "wednesday",
-  "thursday",
-  "friday",
-  "saturday",
-  "sunday",
-];
+// many different ways
 
-let date = new Date();
-let month = date.getMonth();
-console.log(months[month]);
+document.body.style.backgroundColor = "purple";
+document.body.style.color = "yellow";
+document.getElementById("btn").style.color = "red";
 
-let day = date.getDay();
-console.log(days[day]);
+// assign to a variable
+let element = document.getElementById("element");
 
-console.log(date.getDate());
-console.log(date.getFullYear());
+// do something
+document.querySelector("element"); // do something
 
-let sentence = `Today's date is ${days[day]}, ${date.getDate()} ${
-  months[month]
-} ${date.getFullYear()}`;
-console.log(sentence);
+//window object
+console.log(window);
+
+// returns a node object or a node list, which is an arraylike object
+
+let btn = document.getElementById("btn");
+let name = btn.nodeName;
+let css = btn.style;
+
+console.log(btn);
+console.log(name);
