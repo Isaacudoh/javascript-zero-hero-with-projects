@@ -1,25 +1,41 @@
-// math - used to perform math operation in Javascript
-// standard built-in objects - always available
+// Date
 
-// rounding down
+let months = [
+  "january",
+  "fabruary",
+  "march",
+  "april",
+  "may",
+  "june",
+  "july",
+  "august",
+  "september",
+  "november",
+  "december",
+];
 
-// let number = 4.56789;
-// let result = Math.floor(number);
+let days = [
+  "Sunday",
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+  "sunday",
+];
 
-// rounding up
-// let number = 4.56789;
-// let result = Math.ceil(number);
+let date = new Date();
+let month = date.getMonth();
+console.log(months[month]);
 
-// square root
-// let number = 89;
-// let result = Math.sqrt(number);
+let day = date.getDay();
+console.log(days[day]);
 
-//min number
-// let number = Math.min(3, 4, 6, 1, 9);
+console.log(date.getDate());
+console.log(date.getFullYear());
 
-// Max number
-// let number = Math.man(9, 4, 3, 5, 6, 4, 3, 9, 7);
-
-const result = Math.floor(Math.random() * 10);
-
-console.log(result);
+let sentence = `Today's date is ${days[day]}, ${date.getDate()} ${
+  months[month]
+} ${date.getFullYear()}`;
+console.log(sentence);
