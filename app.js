@@ -1,10 +1,22 @@
 // select the element or group of elements that we want
 // decide the effect we want to apply to the selection
 
-// getElementsByclassName('className');
+// querySelector('any css'); - selects single
+// querySelectorAll('any css') - selects all
 
-//HTMLCollection
+let result = document.querySelector("#result");
+result.style.backgroundColor = "blue";
 
-let listItems = document.getElementsByClassName("special");
-listItems[2].style.color = "blue";
-console.log(listItems);
+let item = document.querySelector(".special");
+// console.log(item);
+
+let lastItem = document.querySelector("li:last-child");
+// console.log(lastItem);
+
+let list = document.querySelectorAll(".special");
+console.log(list);
+
+list.forEach(function (item) {
+  console.log(item);
+  item.style.color = "yellow";
+});
