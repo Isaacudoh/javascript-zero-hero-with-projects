@@ -7,6 +7,7 @@
 
 let heading = document.querySelector("h1");
 let btn = document.querySelector(".btn");
+let link = document.getElementById("link");
 
 heading.addEventListener("click", function (event) {
   console.log(event.currentTarget);
@@ -14,4 +15,11 @@ heading.addEventListener("click", function (event) {
 
 btn.addEventListener("click", function (e) {
   e.currentTarget.classList.add("blue");
+  console.log(e.type);
 });
+
+function someFunc(e) {
+  e.preventDefault();
+}
+
+link.addEventListener("click", someFunc);
