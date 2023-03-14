@@ -6,19 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Dom</title>
     <style>
-      .title {
+      .red {
+        background: red;
+        color: white;
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+      .blue {
         background: blue;
         color: white;
-        font-size: 3rem;
         text-transform: capitalize;
+        letter-spacing: 10px;
+      }
+      .btn {
+        background: red;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
       }
     </style>
   </head>
   <body>
     <h1>The Dom</h1>
     <h2>Events in Javascript</h2>
-    <p>Hey, i can trigger event</p>
     <button class="btn">Click me</button>
+
+    <!-- Javascript -->
+    <p onclick="this.classList.add('red')">The old style</p> <!--  try to avoid linking this way -->
 
     <!-- <script src="./Challenges/10-data.js"></script> -->
     <script src="./app.js"></script>
