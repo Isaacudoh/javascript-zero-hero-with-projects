@@ -5,6 +5,9 @@
 let btn = document.querySelector(".btn");
 let heading = document.querySelector("h2");
 
-btn.addEventListener("click", function () {
-  heading.classList.add("red");
-});
+function changeColors() {
+  console.log("hello");
+}
+
+btn.addEventListener("click", changeColors);
+
