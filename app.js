@@ -1,17 +1,17 @@
-// keypress - when key is pressed
-// keydown - when key is down
-// keyup - when key is released
+// event object argument e,evt
+// info about triggered event
+// event.type
+// event.currentTarget
+// this keyword
+// preventDefault() - prevents default behavior
 
-let nameInput = document.getElementById("name");
+let heading = document.querySelector("h1");
+let btn = document.querySelector(".btn");
 
-// nameInput.addEventListener("keypress", function () {
-//   console.log("you pressed a key");
-// });
+heading.addEventListener("click", function (event) {
+  console.log(event.currentTarget);
+});
 
-// nameInput.addEventListener("keydown", function () {
-//   console.log("you pressed a key");
-// });
-
-nameInput.addEventListener("keyup", function () {
-  console.log(nameInput.value);
+btn.addEventListener("click", function (e) {
+  e.currentTarget.classList.add("blue");
 });
