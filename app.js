@@ -1,22 +1,15 @@
-// select the element or group of elements that we want
-// decide the effect we want to apply to the selection
+// innerHTML
+// textContent
 
-// querySelector('any css'); - selects single
-// querySelectorAll('any css') - selects all
+let list = document.getElementById("first");
+let div = document.getElementById("second");
+let item = document.querySelector(".item");
 
-let result = document.querySelector("#result");
-result.style.backgroundColor = "blue";
+console.log(div.textContent);
+console.log(list.innerHTML);
+console.log(list.textContent);
 
-let item = document.querySelector(".special");
-// console.log(item);
-
-let lastItem = document.querySelector("li:last-child");
-// console.log(lastItem);
-
-let list = document.querySelectorAll(".special");
-console.log(list);
-
-list.forEach(function (item) {
-  console.log(item);
-  item.style.color = "yellow";
-});
+let ul = document.createElement("ul");
+ul.innerHTML = `<li class="item">list item</li>
+      <li>list item</li><li>list item</li>`;
+document.body.appendChild(ul);
