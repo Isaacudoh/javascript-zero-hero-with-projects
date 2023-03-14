@@ -1,28 +1,28 @@
-// select element
-// addEventListener()
-// what event, what to do
+// click - fired after full action occues
+// mousedown - button is pressed
+// mouseup - button is released
+// mouseneter - moved onto an element
+// mouseleave - moved outof an element
 
-// Example 1: annonymous function setup
-let btn = document.querySelector(".btn");
 let heading = document.querySelector("h2");
+let btn = document.querySelector(".btn");
 
 btn.addEventListener("click", function () {
-  console.log("i have been clicked");
-  heading.classList.add("red");
+  console.log("you clicked me");
 });
 
-// Example 2: function Reference setup
+btn.addEventListener("mousedown", function () {
+  console.log("down");
+});
 
-// let btn = document.querySelector(".btn");
-// let heading = document.querySelector("h2");
+btn.addEventListener("mouseup", function () {
+  console.log("up");
+});
 
-// function changeColors() {
-//   let hasClass = heading.classList.contains("red");
-//   if (hasClass) {
-//     heading.classList.remove("red");
-//   } else {
-//     heading.classList.add("red");
-//   }
-// }
+heading.addEventListener("mouseenter", function () {
+  heading.classList.add("blue");
+});
 
-// btn.addEventListener("click", changeColors);
+heading.addEventListener("mouseleave", function () {
+  heading.classList.remove("blue");
+});
