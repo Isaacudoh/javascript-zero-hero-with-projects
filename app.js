@@ -14,5 +14,10 @@ function showBubbling(e) {
   }
 }
 
+function stopPropagation(e) {
+  console.log("you clicked on a list");
+  e.stopPropagation();
+}
+
 list.addEventListener("click", showBubbling);
-// container.addEventListener("click", showBubbling);
+container.addEventListener("click", showBubbling);
