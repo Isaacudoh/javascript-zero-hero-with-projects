@@ -1,18 +1,8 @@
-// Web storage API - Provided by browser
-// session storage, local storage - provided by broswer
-// Method names - setItem, getItem, removeItem, clear
-// local storage uses
-// Session storage - processes data between sessions (while browser is active)
+// JSON.stringify(),JSON.parse ()
 
-// localStorage.setItem("name", "john");
-// sessionStorage.setItem("name", "john");
+let friends = ["john", "peter", "bob"];
 
-localStorage.setItem("name", "nsikak");
-localStorage.setItem("friend", "john");
-localStorage.setItem("job", "developer");
-localStorage.setItem("address", "814 N Magnolia stree");
+localStorage.setItem("friends", friends);
 
-let friend = localStorage.getItem("friend");
-console.log(friend);
-localStorage.removeItem("name");
-localStorage.clear();
+let values = localStorage.getItem("friends");
+console.log(values[0]);
