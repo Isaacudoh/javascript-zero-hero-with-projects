@@ -1,8 +1,8 @@
-// JSON.stringify(),JSON.parse ()
+// JSON.stringify(), JSON.parse ()
 
 let friends = ["john", "peter", "bob"];
 
-localStorage.setItem("friends", friends);
+localStorage.setItem("friends", JSON.stringify(friends));
 
-let values = localStorage.getItem("friends");
-console.log(values[0]);
+let values = JSON.parse(localStorage.getItem("friends"));
+console.log(values[2]);
