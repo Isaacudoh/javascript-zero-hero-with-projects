@@ -8,7 +8,13 @@ window.addEventListener('load', function(){
 
 */
 
-window.addEventListener("load", function () {
+window.addEventListener("Load", function () {
+  let image = document.querySelector("img");
+  console.log(image);
+  console.log(image.width);
+});
+
+window.addEventListener("DOMContentLoaded", function () {
   let image = document.querySelector("img");
   console.log(image);
   console.log(image.width);
