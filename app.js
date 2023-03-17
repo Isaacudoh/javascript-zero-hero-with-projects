@@ -1,20 +1,26 @@
-// JSON.stringify(), JSON.parse ()
+/*
+setTimeout - runs function once after specific time
+- pass function reference
+- duration in ms (1000 ms = 1 second)
+- default 0, will cover more extensively in async/await section
+- returns unique identifier
+- clearTimeout to cancel
+- on window object
+*/
 
-let friends = ["john", "peter", "bob"];
-
-localStorage.setItem("friends", JSON.stringify(friends));
-
-let values = JSON.parse(localStorage.getItem("friends"));
-console.log(values[2]);
-
-let fruits;
-if (localStorage.getItem("fruit")) {
-  fruits = JSON.parse(localStorage.getItem("fruits"));
-} else {
-  fruits = [];
+function sayHello() {
+  console.log("hello john");
 }
+// setTimeout(sayHello, 1000);
 
-console.log(fruits);
-// fruits.push("apple");
-fruits.push("orange");
-localStorage.setItem("fruits", JSON.stringify(fruits));
+// alternative approach - ES6 arrow functions
+// setTimeout(function () {
+//   console.log("hello john");
+// }, 6000);
+
+// pass arguments
+function showScore(name, score) {
+  console.log(`hello ${name}, your score is ${score}`);
+}
+// setTimeout(showScore,1000,'john',34)
+
